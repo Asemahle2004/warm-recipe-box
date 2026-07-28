@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, Clock, Flame, Heart, Users } from "lucide-react";
-import { RECIPES } from "@/lib/recipes";
+import { RECIPES, type Recipe } from "@/lib/recipes";
 import { Header } from "@/components/Header";
 import { useFavorites } from "@/lib/favorites";
 import { cn } from "@/lib/utils";
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/recipe/$id")({
 });
 
 function RecipeDetail() {
-  const { recipe } = Route.useLoaderData();
+  const { recipe } = Route.useLoaderData() as { recipe: Recipe };
   const { isFavorite, toggle } = useFavorites();
   const fav = isFavorite(recipe.id);
 
