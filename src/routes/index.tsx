@@ -10,16 +10,16 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "EasyMeals — Warm, simple recipes for every meal" },
+      { title: "EasyMeals — Proudly South African recipes for every meal" },
       {
         name: "description",
         content:
-          "Discover breakfast, lunch, dinner, snack and vegetarian recipes with ingredients, steps, cook time and difficulty.",
+          "Cook local: bobotie, bunny chow, pap & wors, chakalaka, umngqusho and healthy South African recipes with ingredients you'll find at your local shop.",
       },
-      { property: "og:title", content: "EasyMeals — Warm, simple recipes" },
+      { property: "og:title", content: "EasyMeals — Proudly South African recipes" },
       {
         property: "og:description",
-        content: "Cozy recipes with ingredients, steps, times and favourites.",
+        content: "Classic braai, curry, breakfast and healthy SA dishes with ingredients, steps and times.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -59,14 +59,14 @@ function Index() {
         <div className="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
           <div className="mx-auto max-w-2xl text-center">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-background/70 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-primary ring-1 ring-primary/20">
-              <ChefHat className="h-3.5 w-3.5" /> Cook something lovely
+              <ChefHat className="h-3.5 w-3.5" /> Proudly South African
             </span>
             <h1 className="mt-5 font-display text-5xl font-bold leading-[1.05] tracking-tight text-foreground md:text-6xl">
-              Warm recipes for every kind of hungry.
+              South African recipes for every kind of hungry.
             </h1>
             <p className="mx-auto mt-4 max-w-lg text-base text-muted-foreground md:text-lg">
-              From breezy breakfasts to slow-cooked dinners — find a dish you'll
-              love, save your favourites, and cook with confidence.
+              From braai-day boerewors to Sunday bobotie, Durban curries to healthy
+              morogo — cook local with ingredients from your corner shop.
             </p>
 
             <div className="mx-auto mt-8 max-w-xl">
